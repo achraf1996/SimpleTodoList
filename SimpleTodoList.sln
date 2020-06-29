@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTodoList.WPF", "SimpleTodoList.WPF.csproj", "{D9390011-3D9E-4152-B1A5-23FB00615B2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTodoList.WPF", "SimpleTodoList.WPF\SimpleTodoList.WPF.csproj", "{D9390011-3D9E-4152-B1A5-23FB00615B2E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6E8BDA15-A644-4173-871C-FD0F1B55F310} = {6E8BDA15-A644-4173-871C-FD0F1B55F310}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTodoList.Domain", "..\SimpleTodoList.Domain\SimpleTodoList.Domain.csproj", "{E5B2158C-C718-4D1F-B380-4B4484C06BEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTodoList.Domain", "SimpleTodoList.Domain\SimpleTodoList.Domain.csproj", "{E5B2158C-C718-4D1F-B380-4B4484C06BEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTodoList.Infrastructure", "..\SimpleTodoList.Infrastructure\SimpleTodoList.Infrastructure.csproj", "{D52B3DCF-5736-4096-8580-EE86DA4BB9D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTodoList.Infrastructure", "SimpleTodoList.Infrastructure\SimpleTodoList.Infrastructure.csproj", "{D52B3DCF-5736-4096-8580-EE86DA4BB9D4}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E5B2158C-C718-4D1F-B380-4B4484C06BEF} = {E5B2158C-C718-4D1F-B380-4B4484C06BEF}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTodoList.Logic", "..\SimpleTodoList.Logic\SimpleTodoList.Logic.csproj", "{6E8BDA15-A644-4173-871C-FD0F1B55F310}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTodoList.Logic", "SimpleTodoList.Logic\SimpleTodoList.Logic.csproj", "{6E8BDA15-A644-4173-871C-FD0F1B55F310}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E5B2158C-C718-4D1F-B380-4B4484C06BEF} = {E5B2158C-C718-4D1F-B380-4B4484C06BEF}
 		{D52B3DCF-5736-4096-8580-EE86DA4BB9D4} = {D52B3DCF-5736-4096-8580-EE86DA4BB9D4}
