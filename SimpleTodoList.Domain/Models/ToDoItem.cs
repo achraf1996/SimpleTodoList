@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SimpleTodoList.Domain.Models
 {
-    public class ToDoItem
+    public class TodoItem
     {
         [Key]
         public int Id { get; set; }
