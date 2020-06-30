@@ -18,6 +18,6 @@ namespace SimpleTodoList.Domain.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        public ObservableCollection<TodoItem> Todoitems {get;set;}
+        public ObservableCollection<TodoItem> TodoItems {get;set;}
     }
 }

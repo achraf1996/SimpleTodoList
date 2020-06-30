@@ -12,7 +12,7 @@ namespace SimpleTodoList.Infrastructure.DI
     {
         public  static void RegisterInfrastructureDependencies(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<ToDoDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("mainDatabase")));
+            services.AddDbContext<ToDoDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("SimpleTodoApp")));
             services.AddScoped<ITodoRepository,TodoRepository>();
         }
     }

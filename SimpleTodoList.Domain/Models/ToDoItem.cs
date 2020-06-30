@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace SimpleTodoList.Domain.Models
 {
+    [Table(nameof(TodoItem))]
     public class TodoItem
     {
         [Key]

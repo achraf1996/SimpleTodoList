@@ -8,6 +8,6 @@ namespace SimpleTodoList.Infrastructure.DI
         public ToDoDbContext(DbContextOptions<ToDoDbContext> options) : base(options)
         {}
 
-        public DbSet<TodoItem> toDoItems;
+        public DbSet<TodoItem> toDoItems { get; set; }
     }
 }

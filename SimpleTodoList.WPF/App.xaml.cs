@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using SimpleTodoList.Infrastructure.DI;
+using SimpleTodoList.Logic.DI;
 
 namespace SimpleTodoList
 {
@@ -40,6 +41,7 @@ namespace SimpleTodoList
         private void ConfigureServices(ServiceCollection serviceCollection)
         {
             serviceCollection.RegisterInfrastructureDependencies(Configuration);
+            serviceCollection.RegisterLogicDependencies();
             serviceCollection.AddTransient(typeof(MainWindow));
         }
     }

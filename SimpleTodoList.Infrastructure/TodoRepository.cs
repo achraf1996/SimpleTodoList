@@ -5,26 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SimpleTodoList.Domain.Models;
+using SimpleTodoList.Infrastructure;
 using SimpleTodoList.Infrastructure.DI;
 
 namespace SimpleTodoList.Logic
 {
     internal class TodoRepository : ITodoRepository
     {
-        ToDoDbContext toDoDbContext;
+        private readonly ToDoDbContext _toDoDbContext;
 
         public TodoRepository(ToDoDbContext doDbContext)
         {
-            toDoDbContext = doDbContext;
+            _toDoDbContext = doDbContext;
         }
 
         public Task<TodoItem> GetTodoItem(int id)
         {
-            return toDoDbContext.toDoItems.FirstOrDefaultAsync(todo => todo.Id == id);
+            return _toDoDbContext.toDoItems.FirstOrDefaultAsync(todo => todo.Id == id);
         }
         public IEnumerable<TodoItem> GetAllTodoItems()
         {
-            return toDoDbContext.toDoItems;
+            return _toDoDbContext.toDoItems;
         }
 
     }
