@@ -1,9 +1,8 @@
 ﻿<Application x:Class="SimpleTodoList.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:SimpleTodoList"
-             >
+             xmlns:local="clr-namespace:SimpleTodoList">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>

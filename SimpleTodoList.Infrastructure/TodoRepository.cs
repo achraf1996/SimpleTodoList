@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SimpleTodoList.Domain.Models;
@@ -23,10 +20,10 @@ namespace SimpleTodoList.Logic
         {
             return _toDoDbContext.toDoItems.FirstOrDefaultAsync(todo => todo.Id == id);
         }
+
         public IEnumerable<TodoItem> GetAllTodoItems()
         {
             return _toDoDbContext.toDoItems;
         }
-
     }
 }

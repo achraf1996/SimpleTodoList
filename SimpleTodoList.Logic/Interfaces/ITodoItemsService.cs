@@ -1,6 +1,6 @@
-﻿using SimpleTodoList.Domain.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using SimpleTodoList.Domain.Models;
 
 namespace SimpleTodoList.Logic
 {
